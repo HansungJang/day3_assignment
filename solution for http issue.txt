@@ -1,0 +1,8 @@
+solution for http issue
+
+goal -> http domain이 아닌 https 만들어야 됨;
+>> 사실 아래 방법은 별도의 설치 과정이 필요해서 우선 과제 진행을 위해서 to-do-list 및 style 작업 이후 
+github io를 사용하면 자동으로 https로 전환되니 향후 기능 추가 방법! (빠른 해결 방안이 될 것으로 예상)
+
+1) https://uiyoji-journal.tistory.com/89
+2) https://stajun.tistory.com/entry/Visual-Studio-Code-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EC%84%9C%EB%B2%84Live-Server-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0

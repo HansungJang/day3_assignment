@@ -1,0 +1,47 @@
+#todo-form > input {
+  width: 20rem;
+  height: 45px;
+
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+  /*
+  form테그 크기조정, 색상 입히기 
+  [참고자료] https://juyoungit.tistory.com/163
+  */
+  color: white;
+
+  /*
+  바탕 색상을 투명하게 설정하는 것
+  [참고자료] https://hianna.tistory.com/815
+  */
+}
+
+/*입력란에 Default로 저장 되어있는 글자*/
+::placeholder {
+  color: white;
+  text-align: center;
+  border-bottom: 10px solid red;
+}
+
+/*ul 요소*/
+#todo-list {
+  color: white;
+  display: box; /*li 세로 배열 요인*/
+  background-color: rgba(0, 0, 0, 0.8);
+  max-width: 20rem;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+#todo-list li {
+  max-width: 20rem;
+  text-align: right;
+}
+
+#todo-list button {
+  background-color: transparent;
+  border-radius: 5%;
+  border: 1px solid red;
+}
