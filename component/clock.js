@@ -1,9 +1,9 @@
 const clock = document.querySelector("h2#clock");
 
 function getclock() {
-  //½Ã°£, ³¯Â¥ ¿äÀÎÀ» ¹Ş¾Æ¿À´Â ÇÔ¼ö
+  //ì‹œê°„, ë‚ ì§œ ìš”ì¸ì„ ë°›ì•„ì˜¤ëŠ” í•¨ìˆ˜
   const date = new Date();
-  //.padstart(¼ıÀÚ, ³ÖÀ» ¼ıÀÚ); 2ÀÚ¸®, 2ÀÚ¸®°¡ ¾Æ´Ñ °æ¿ì ¾Õ¿¡ 0dmf cnrk
+  //.padstart(ìˆ«ì, ë„£ì„ ìˆ«ì); 2ìë¦¬, 2ìë¦¬ê°€ ì•„ë‹Œ ê²½ìš° ì•ì— 0dmf cnrk
   const hours = String(date.getHours()).padStart(2, "0");
   const minutes = String(date.getMinutes()).padStart(2, "0");
   const seconds = String(date.getSeconds()).padStart(2, "0");
@@ -11,5 +11,5 @@ function getclock() {
 }
 
 getclock();
-// 1ÃÊ ¸¶´Ù ÇÔ¼ö¸¦ ¹İº¹ È£Ãâ; (´ÜÀ§, mili-second)
+// 1ì´ˆ ë§ˆë‹¤ í•¨ìˆ˜ë¥¼ ë°˜ë³µ í˜¸ì¶œ; (ë‹¨ìœ„, mili-second)
 setInterval(getclock, 1000);

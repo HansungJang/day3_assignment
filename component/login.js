@@ -3,27 +3,27 @@ const loginForm = document.querySelector("#loginForm");
 const greeting = document.querySelector("#greeting");
 
 const HIDDEN_CLASNAME = "hidden";
-//ÀÌ¸§ÀÌ »ç¿ëÀÚ°¡ ÀÔ·ÂÇÑ ÀûÀÌ ÀÖ´ÂÁö¿¡ µû¶ó¼­ ´ëÀÀÇÏ±â À§ÇØ¼­
-//¿ì¼± ¿ä¼Ò¸¦ ¼û°Ü ³õ´Â °ÍÀ» default·Î µÒ.
+//ì´ë¦„ì´ ì‚¬ìš©ìê°€ ì…ë ¥í•œ ì ì´ ìˆëŠ”ì§€ì— ë”°ë¼ì„œ ëŒ€ì‘í•˜ê¸° ìœ„í•´ì„œ
+//ìš°ì„  ìš”ì†Œë¥¼ ìˆ¨ê²¨ ë†“ëŠ” ê²ƒì„ defaultë¡œ ë‘ .
 const USERNAME_KEY = "username";
 
-// ÀÌ¸§À» ÀÔ·Â¹Ş´Â ÇÔ¼ö
+// ì´ë¦„ì„ ì…ë ¥ë°›ëŠ” í•¨ìˆ˜
 function onLoginSubmit(event) {
-  event.preventDefault(); //ÀÚµ¿À¸·Î »õ·Î°íÄ§ ¹æÁö
+  event.preventDefault(); //ìë™ìœ¼ë¡œ ìƒˆë¡œê³ ì¹¨ ë°©ì§€
   loginForm.classList.add(HIDDEN_CLASNAME);
   const username = loginInput.value;
   localStorage.setItem(USERNAME_KEY, username);
   paintGreetings(username);
 }
 
-// ÀÔ·Â¹ŞÀº ÀÌ¸§À» Ãâ·ÂÇÏ´Â ÇÔ¼ö
+// ì…ë ¥ë°›ì€ ì´ë¦„ì„ ì¶œë ¥í•˜ëŠ” í•¨ìˆ˜
 function paintGreetings(username) {
   greeting.innerText = `Hello ${username}`;
   greeting.classList.remove(HIDDEN_CLASNAME);
 }
 
-// ####### Main: ÀÔ·Â°ªÀÌ ÀÖ´ÂÁö È®ÀÎ!
-// local-storage¿¡ ÀúÀåµÈ ÀÔ·Â°ªÀÌ ÀÖ´ÂÁö È®ÀÎ!
+// ####### Main: ì…ë ¥ê°’ì´ ìˆëŠ”ì§€ í™•ì¸!
+// local-storageì— ì €ì¥ëœ ì…ë ¥ê°’ì´ ìˆëŠ”ì§€ í™•ì¸!
 const savedUsername = localStorage.getItem(USERNAME_KEY);
 
 if (savedUsername === null) {

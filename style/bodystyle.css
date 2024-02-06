@@ -4,34 +4,33 @@ html {
 }
 
 body {
+  height: 100%;
+
   min-height: 100%;
-  padding: 200px; /*ÀÔ·Â¶õ Áß¾Ó Á¤·ÄÀ» À§ÇØ¼­ »ç¿ë*/
+  padding: 200px; /*ì…ë ¥ë€ ì¤‘ì•™ ì •ë ¬ì„ ìœ„í•´ì„œ ì‚¬ìš©*/
   font-family: "Pixelify Sans";
   overflow: hidden;
 }
 
+#Weather {
+  color: white;
+  width: 20px;
+}
+
 /*
-issue : ÀÌ¹ø¿¡µµ Áß¾Ó Á¤·Ä(¼öÁ÷ ¹æÇâ) 
-body¿ä¼Ò°¡ »ó´Ü¿¡ ¹èÄ¡µÇ¾î ÀÖ¾î ÇØ´ç ¿ä¼ÒÀÇ ³ôÀÌ¸¦ Á¶Á¤ÇÏ´Â °Í¿¡ ¿À·£ ½Ã°£ÀÌ °É·È´Ù. 
+issue : ì´ë²ˆì—ë„ ì¤‘ì•™ ì •ë ¬(ìˆ˜ì§ ë°©í–¥) 
+bodyìš”ì†Œê°€ ìƒë‹¨ì— ë°°ì¹˜ë˜ì–´ ìˆì–´ í•´ë‹¹ ìš”ì†Œì˜ ë†’ì´ë¥¼ ì¡°ì •í•˜ëŠ” ê²ƒì— ì˜¤ëœ ì‹œê°„ì´ ê±¸ë ¸ë‹¤. 
 
-1-trial, ºÎ¸ğ ¿ä¼ÒÀÎ html(position: relative), body(position: absolute)ºÎ¿©ÇÏ¿© ½Ãµµ
->> °á°ú´Â body ¿äÀÎÀÇ ¿ŞÂÊ ¸ğ¼­¸®°¡ Áß¾Ó¿¡ À§Ä¡ÇÏ´Â °ÍÀ» È®ÀÎ. 
->> ±×·¯³ª body ¾È¿¡ ÀÖ´Â ¹è°æ»çÁø ¶ÇÇÑ °°ÀÌ ÀÌµ¿ÇÏ´Â issue 
+1-trial, ë¶€ëª¨ ìš”ì†Œì¸ html(position: relative), body(position: absolute)ë¶€ì—¬í•˜ì—¬ ì‹œë„
+>> ê²°ê³¼ëŠ” body ìš”ì¸ì˜ ì™¼ìª½ ëª¨ì„œë¦¬ê°€ ì¤‘ì•™ì— ìœ„ì¹˜í•˜ëŠ” ê²ƒì„ í™•ì¸. 
+>> ê·¸ëŸ¬ë‚˜ body ì•ˆì— ìˆëŠ” ë°°ê²½ì‚¬ì§„ ë˜í•œ ê°™ì´ ì´ë™í•˜ëŠ” issue 
 
-2-trial, translateÀ» ÀÌ¿ëÇÏ¿© Ç®ÀÌ¸¦ ½ÃµµÇßÁö¸¸ ¿ª½Ã 1-trial¿Í °°Àº °á°ú°¡ ³ª¿Ô´Ù. 
+2-trial, translateì„ ì´ìš©í•˜ì—¬ í’€ì´ë¥¼ ì‹œë„í–ˆì§€ë§Œ ì—­ì‹œ 1-trialì™€ ê°™ì€ ê²°ê³¼ê°€ ë‚˜ì™”ë‹¤. 
 
->> ÇØ°á idea: consoleÃ¢¿¡ padding ¿äÀÎÀ» ÀÓÀÇ·Î ÁÖ´Â ÀÛ¾÷À» ÅëÇØ¼­ ¿ì¼± ÀÛ¾÷À» ÁøÇàÇÏ¿´´Ù. 
+>> í•´ê²° idea: consoleì°½ì— padding ìš”ì¸ì„ ì„ì˜ë¡œ ì£¼ëŠ” ì‘ì—…ì„ í†µí•´ì„œ ìš°ì„  ì‘ì—…ì„ ì§„í–‰í•˜ì˜€ë‹¤. 
 
-[Âü°íÀÚ·á]
+[ì°¸ê³ ìë£Œ]
 1. https://velog.io/@hsecode/CSS-%EC%88%98%EC%A7%81-%EC%A4%91%EC%95%99-%EC%A0%95%EB%A0%AC
 2. https://ojhallae.tistory.com/34
 
 */
-
-#quote {
-  font-size: 1rem;
-  text-align: center;
-  color: white;
-  font-weight: bold;
-  background-color: rgba(0, 0, 0, 0.5);
-}

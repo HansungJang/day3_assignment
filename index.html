@@ -16,11 +16,21 @@
     <link rel="stylesheet" href="style/background.css" />
     <link rel="stylesheet" href="style/clock.css" />
     <link rel="stylesheet" href="style/todolist.css" />
+    <link rel="stylesheet" href="style/quote.css" />
+    <link rel="stylesheet" href="style/weather.css" />
 
     <title>Momentum App</title>
   </head>
 
   <body>
+    <!--Weather-->
+    <div>
+      <!-- <img id="weatherIcon" src="" alt="weather_icon" /> -->
+      <span><img id="icon" /></span>
+      <div id="weather"></div>
+      <div id="city"></div>
+    </div>
+
     <!--Clock-->
     <h2 id="clock"></h2>
 
@@ -56,11 +66,12 @@
       <p></p>
     </div>
 
-    <script src="login.js"></script>
-    <script src="clock.js"></script>
-    <script src="quotes.js"></script>
-    <script src="background.js"></script>
+    <script src="component/login.js"></script>
+    <script src="component/clock.js"></script>
+    <script src="component/quotes.js"></script>
+    <script src="component/background.js"></script>
     <!--Background-->
-    <script src="todolist.js"></script>
+    <script src="component/todolist.js"></script>
+    <script src="component/weather.js"></script>
   </body>
 </html>

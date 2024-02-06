@@ -1,0 +1,20 @@
+/* body {
+  height: 100%;
+} */
+
+#quote {
+  /*web 하단 위치시키는 방법*/
+  /* display: block;
+  bottom: 0;
+  position: fixed; */
+
+  /* width: 20rem; */
+  position: relative;
+  transform: translateY(100%);
+
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+}

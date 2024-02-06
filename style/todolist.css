@@ -2,10 +2,15 @@
   width: 20rem;
   height: 45px;
 
+  /* border: 3px solid red; */
   border-top: none;
   border-left: none;
   border-right: none;
   background-color: transparent;
+
+  overflow: hidden;
+
+  min-width: 335px;
   /*
   form테그 크기조정, 색상 입히기 
   [참고자료] https://juyoungit.tistory.com/163
@@ -20,13 +25,19 @@
 
 /*입력란에 Default로 저장 되어있는 글자*/
 ::placeholder {
+  /* width: 20rem; */
+
   color: white;
   text-align: center;
-  border-bottom: 10px solid red;
+  border-bottom: 8px solid red;
 }
 
 /*ul 요소*/
 #todo-list {
+  /*입력이 9개 이상 들어온 경우 scroll 생기도록*/
+  max-height: 176px;
+  overflow-y: scroll;
+
   color: white;
   display: box; /*li 세로 배열 요인*/
   background-color: rgba(0, 0, 0, 0.8);
